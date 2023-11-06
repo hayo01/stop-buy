@@ -3,6 +3,11 @@ body {
   padding: 0;
 }
 
+li {
+  display: inline-block;
+  list-style: none;
+}
+
 /* 글씨체 */
 .eng {
   font-family: "Work Sans", sans-serif;
@@ -62,6 +67,53 @@ body {
   column-gap: 0;
   max-height: 900px;
   overflow: hidden;
+}
+/* 슬라이드 */
+.slide-wrap {
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.slide-wrap .img-slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0;
+}
+.slide-wrap .img-slide.original {
+  animation: 30s linear 0s infinite normal forwards running slide01;
+}
+.slide-wrap .img-slide.clone {
+  animation: 30s linear 0s infinite normal none running slide02;
+}
+
+/** 애니메이션 **/
+/* 원본용 */
+@keyframes slide01 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  50.01% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* 복제용 */
+@keyframes slide02 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
 }
 
 /* 실태 정보 */
