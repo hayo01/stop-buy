@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* 글씨체 */
+.eng {
+  font-family: "Work Sans", sans-serif;
+  color: #ffffff;
+  font-weight: 300;
+}
+.kor {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #ffffff;
+  font-weight: 300;
+}
+.kor-400 {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+}
+.kor-700 {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* 페이지 컨텐츠 */
+#container {
+  background: linear-gradient(180deg, #fc5b9f 33.73%, #fc5b9f 33.73%, #d5ff2f 100%);
+}
+
+.middle {
+  padding: 80px;
+}
+
+.bottom-line {
+  margin-block: 30px;
+  border-bottom: 2px solid #ffffff;
+}
+
+#campaign-main p {
+  margin-block: 0;
+  line-height: 101px;
+  font-size: 80px;
+}
+
+.key-content p {
+  margin-block: 0;
+  line-height: 73.84px;
+  font-size: 52px;
+}
+
+/* byebye */
+#bye {
+  display: flex;
+  margin-block: 100px;
+}
+#bye div {
+  display: inherit;
+  flex-direction: column;
+  column-gap: 0;
+  max-height: 900px;
+  overflow: hidden;
+}
+
+/* 실태 정보 */
+.current-status {
+  margin-bottom: 150px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.current-status p {
+  margin-block: 0;
+}
+
+.underline-title {
+  font-size: 38px;
+  line-height: 48px;
+  border-bottom: 1px solid #ffffff;
+  width: fit-content;
+}
+
+.number {
+  font-size: 200px;
+  line-height: 252.67px;
+}
+
+.descr {
+  font-size: 45px;
+  line-height: 56.85px;
+}
+
+/* 부모견 이야기 */
+.mommy {
+  padding-top: 0;
+}
+
+#photos {
+  display: flex;
+  column-gap: 60px;
+  padding-top: 50px;
+  margin-left: -280px;
+
+  overflow-x: scroll;
+  scrollbar-width: none; /* 파이어폭스 */
+}
+#photos::-webkit-scrollbar {
+  display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+
+.story-dots {
+  padding-top: 60px;
+  text-align: center;
+  line-height: 43px;
+  letter-spacing: 0em;
+}
+.story-dots a {
+  font-size: 34px;
+  text-decoration: none;
+}
+.story-dots p {
+  margin: 0;
+  font-size: 40px;
+}
+
+/* Footer */
+.footer {
+  padding-top: 60px;
+}
+
+#footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 45px;
+  padding-top: 70px;
+}
+
+.weact-logo {
+  width: 192px;
+  height: 112px;
+}
+
+#people p {
+  margin-block: 0;
+  font-size: 34px;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+#sns-links {
+  display: flex;
+  column-gap: 40px;
+  padding-block: 20px;
+}
+#sns-links img {
+  width: 56.81px;
+  height: 56.98px;
+}
+
+#facebook {
+  margin-left: -15px;
+}
+
+.ci-logo {
+  width: 795px;
+  height: 166px;
+}
+
+.copyright {
+  margin-block: 0;
+  font-size: 34px;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: center;
+}
