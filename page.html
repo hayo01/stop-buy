@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <!-- style -->
     <link rel="stylesheet" href="page.css" />
+    <link rel="stylesheet" href="slide.css" />
+
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +16,8 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Work+Sans:wght@300;400&display=swap"
       rel="stylesheet"
     />
+
+    <!-- script -->
     <script src="page.js"></script>
   </head>
   <body>
@@ -85,21 +91,29 @@
       </div>
 
       <!-- 부모견 이야기 -->
-      <div>
+      <div style="margin-bottom: 40px">
         <div class="middle mommy key-content">
           <p class="kor">새끼를 생산하는 기계로 살아온 부모견에게,</p>
           <p class="kor">태어나자마자 돈벌이 수단이 되는 자견들에게,</p>
           <p class="kor">이제는 함께 약속해요.</p>
           <p class="kor">멍! 가족은 사는게 아니야.</p>
         </div>
-        <div id="photos">
-          <img src="./assets/mom_1.svg" alt="" />
-          <img src="./assets/mom_1.svg" alt="" />
-          <img src="./assets/mom_1.svg" alt="" />
+        <div class="photos slide slide_wrap">
+          <div class="slide_item item1"><img src="./assets/mom_1.svg" alt="" /></div>
+          <div class="slide_item item2"><img src="./assets/mom_1.svg" alt="" /></div>
+          <div class="slide_item item3"><img src="./assets/mom_1.svg" alt="" /></div>
+          <div class="slide_item item4"><img src="./assets/mom_1.svg" alt="" /></div>
+          <div class="slide_item item5"><img src="./assets/mom_1.svg" alt="" /></div>
+          <div class="slide_item item1"><img src="./assets/mom_1.svg" alt="" /></div>
+          <div class="slide_item item2"><img src="./assets/mom_1.svg" alt="" /></div>
+          <div class="slide_item item3"><img src="./assets/mom_1.svg" alt="" /></div>
+          <div class="slide_item item4"><img src="./assets/mom_1.svg" alt="" /></div>
+          <div class="slide_item item5"><img src="./assets/mom_1.svg" alt="" /></div>
+          <ul class="slide_pagination"></ul>
         </div>
         <div class="story-dots">
           <a class="kor-700" href="#">>> 번식장 모견 이레의 이야기</a>
-          <p class="kor-700">. . .</p>
+          <!-- <p class="kor-700">. . .</p> -->
         </div>
       </div>
 
