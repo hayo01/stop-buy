@@ -1,6 +1,16 @@
 window.onload = function () {
   /** byebye **/
+  const windowWidth = window.innerWidth;
   const imgSlide = document.querySelector(".img-slide");
+
+  // 전체 화면의 크기에 맞추어 이미지 추가
+  const slideCount = windowWidth / imgSlide.clientWidth;
+  if (slideCount >= 1) {
+    for (let i = 0; i <= slideCount; i++) {
+      imgSlide.innerHTML += `<li><div id="bye"><img src="./assets/images/bye.jpg" alt="" /></div></li>`;
+    }
+  }
+
   const clone = imgSlide.cloneNode(true); // 복제
 
   document.querySelector(".slide-wrap").appendChild(clone); // 복제본 추가

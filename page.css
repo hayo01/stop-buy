@@ -61,14 +61,14 @@ li {
   display: flex;
   margin-block: 100px;
 }
-#bye div {
+#bye img {
   display: inherit;
   flex-direction: column;
   column-gap: 0;
   max-height: 900px;
   overflow: hidden;
 }
-#bye div img {
+#bye img {
   -webkit-user-drag: none;
 }
 
