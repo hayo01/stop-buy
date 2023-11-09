@@ -8,31 +8,89 @@ li {
   list-style: none;
 }
 
+img {
+  -webkit-user-drag: none;
+}
+
 /** 글씨체 **/
+/* ENG */
+@font-face {
+  font-family: CircularStd; /* 400 */
+  src: url("./assets/fonts/eng/CircularStd-Book.otf") format("opentype");
+}
+@font-face {
+  font-family: CircularStd-Medium; /* 500 */
+  src: url("./assets/fonts/eng/CircularStd-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: CircularStd-Bold;
+  src: url("./assets/fonts/eng/CircularStd-Bold.otf") format("opentype");
+}
+
 .eng {
-  font-family: "Work Sans", sans-serif;
+  font-family: "CircularStd";
   color: #ffffff;
-  font-weight: 300;
+}
+.eng-500 {
+  font-family: "CircularStd-Medium";
+  color: #ffffff;
+}
+.eng-bold {
+  font-family: "CircularStd-Bold";
+  color: #ffffff;
+}
+
+/* KOR */
+@font-face {
+  font-family: Pretendard-Light; /* 300 */
+  src: url("./assets/fonts/kor/Pretendard-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: Pretendard; /* 400 */
+  src: url("./assets/fonts/kor/Pretendard-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: Pretendard-Medium; /* 500 */
+  src: url("./assets/fonts/kor/Pretendard-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: Pretendard-Bold; /* 700 */
+  src: url("./assets/fonts/kor/Pretendard-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: Pretendard-ExtraBold; /* 800 */
+  src: url("./assets/fonts/kor/Pretendard-ExtraBold.otf") format("opentype");
+}
+
+.kor-300 {
+  font-family: "Pretendard-Light";
+  color: #ffffff;
 }
 .kor {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Pretendard";
   color: #ffffff;
-  font-weight: 300;
 }
-.kor-400 {
-  font-family: "Noto Sans KR", sans-serif;
+.kor-500 {
+  font-family: "Pretendard-Medium";
   color: #ffffff;
-  font-weight: 400;
 }
 .kor-700 {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Pretendard-Bold";
   color: #ffffff;
-  font-weight: 700;
+}
+.kor-800 {
+  font-family: "Pretendard-ExtraBold";
+  color: #ffffff;
 }
 
 /** 페이지 컨텐츠 **/
 #container {
-  background: linear-gradient(180deg, #fc5b9f 33.73%, #fc5b9f 33.73%, #d5ff2f 100%);
+  max-width: 1920px; /* Web 기준 */
+  min-width: 992px;
+}
+
+#main {
+  background: linear-gradient(180deg, #fc5b9f 59.27%, #000000 87.57%);
 }
 
 .middle {
@@ -67,9 +125,6 @@ li {
   column-gap: 0;
   max-height: 900px;
   overflow: hidden;
-}
-#bye img {
-  -webkit-user-drag: none;
 }
 
 /* byebye - 슬라이드 */
@@ -145,42 +200,93 @@ li {
   line-height: 56.85px;
 }
 
-/** 부모견 이야기 **/
-.mommy {
-  padding-top: 0;
+/** 화성 번식장 **/
+.hs-title {
+  padding-top: 400px;
 }
-
-/* .photos {
-  display: flex;
-  column-gap: 60px;
-  padding-top: 50px;
-  margin-left: -280px;
-
-  overflow-x: scroll;
-  scrollbar-width: none;
-}
-#photos::-webkit-scrollbar {
-  display: none;
-} */
-
-.story-dots {
-  padding-top: 60px;
+.hs-title p {
+  margin-block: 0;
+  font-size: 79px;
+  line-height: 102.7px;
   text-align: center;
-  line-height: 43px;
-  letter-spacing: 0em;
 }
-.story-dots a {
-  font-size: 34px;
-  text-decoration: none;
+
+#hwasung {
+  padding-top: 500px;
+  background: linear-gradient(180deg, #000000 100%, rgba(0, 0, 0, 0) 33.73%);
 }
-.story-dots p {
-  margin: 0;
-  font-size: 40px;
+#hwasung div img {
+  width: 100%;
+}
+.hs-img-1 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -15px;
+}
+.hs-img-1 img:first-child {
+  max-width: 1920px;
+  position: absolute;
+}
+.hs-img-1 img:nth-child(2) {
+  float: left;
+  position: relative;
+}
+.hs-img-2 {
+  margin-top: -2.5px;
+}
+.hs-img-3,
+.hs-img-4 {
+  margin-top: -5px;
+}
+
+.hs-video {
+  max-width: 1920px;
+  min-height: 550px;
+  margin-top: -5px;
+}
+.hs-video video {
+  position: absolute;
+  width: 100%;
+  max-width: 1920px;
+}
+.hs-video img {
+  transform: scaleY(-1);
+  margin-top: -180px;
+}
+
+/** 부모견 이야기 **/
+.m-start {
+  background: linear-gradient(180deg, #000000 0.12%, #f6d33a 65.91%);
+  padding-block: 200px;
+}
+
+#mommies img {
+  width: 100%;
+  margin-block: -3px;
+}
+
+.mommy p {
+  margin-block: 0;
+}
+
+.mom-title {
+  line-height: 173.24px;
+  font-size: 122px;
+}
+
+.mom-content {
+  line-height: 73.84px;
+  font-size: 52px;
+}
+
+.end {
+  background: linear-gradient(180deg, #f8cdcc 0%, #d5ff2f 84.37%);
+  margin-top: -1px;
 }
 
 /** Footer **/
 .footer {
-  padding-top: 60px;
+  padding-block: 60px;
 }
 
 #footer-content {
