@@ -251,7 +251,7 @@ img {
 }
 .hs-video img {
   transform: scaleY(-1);
-  margin-top: -180px;
+  margin-top: -230px;
 }
 
 /** 부모견 이야기 **/
@@ -260,7 +260,7 @@ img {
   padding-block: 200px;
 }
 
-#mommies img {
+.m-photo img {
   width: 100%;
   margin-block: -3px;
 }
