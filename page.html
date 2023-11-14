@@ -22,22 +22,32 @@
   </head>
   <body>
     <!-- youtube 영상 -->
-    <div>Youtube 영상</div>
+    <div class="youtube-container">
+      <iframe
+        id="youtube"
+        width="100%"
+        src="https://www.youtube.com/embed/I0Q6O5Oq02Q?si=kip2zEGMqVvQu5fF"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
 
     <div id="container">
       <div id="main">
         <div class="middle">
           <div id="campaign-main">
-            <p class="eng">WEACT</p>
-            <p class="eng">CAMPAIGN</p>
-            <p class="eng">2023. 11. 11 ~ 11. 26</p>
+            <p class="eng font1">WEACT</p>
+            <p class="eng font1">CAMPAIGN</p>
+            <p class="eng font1">2023. 11. 11 ~ 11. 26</p>
           </div>
           <div class="bottom-line"></div>
           <div class="key-content">
-            <p class="kor">#사지않을개</p>
-            <p class="eng">WE DONT'T BUY FAMILY.</p>
-            <p class="kor">펫샵 쇼윈도우에 진열된 귀여운</p>
-            <p class="kor">새끼 강아지들은 어디에서 오는걸까요?</p>
+            <p class="kor font3">#사지않을개</p>
+            <p class="eng font3">WE DONT'T BUY FAMILY.</p>
+            <p class="kor font3">펫샵 쇼윈도우에 진열된 귀여운</p>
+            <p class="kor font3">새끼 강아지들은 어디에서 오는걸까요?</p>
           </div>
         </div>
 
@@ -55,19 +65,19 @@
         <!-- 실태 정보 -->
         <div class="middle">
           <div class="current-status">
-            <p class="underline-title kor">대한민국 번식장 실태</p>
-            <p class="number kor-300">2200+</p>
-            <p class="descr kor">의 허가받은 번식장이 대한민국에 존재합니다.</p>
+            <p class="underline-title kor font3">대한민국 번식장 실태</p>
+            <p class="kor-300 number">2200+</p>
+            <p class="kor font2">의 허가받은 번식장이 대한민국에 존재합니다.</p>
           </div>
           <div class="current-status">
-            <p class="underline-title kor">반려동물 분양 실태</p>
+            <p class="underline-title kor font3">반려동물 분양 실태</p>
             <p class="number kor-300">38%</p>
-            <p class="descr kor">의 사람들이 돈을 내고 반려동물을 구입합니다.</p>
+            <p class="kor font2">의 사람들이 돈을 내고 반려동물을 구입합니다.</p>
           </div>
           <div class="current-status">
-            <p class="underline-title kor">유기동물 실태</p>
+            <p class="underline-title kor font3">유기동물 실태</p>
             <p class="number kor-300">110,000</p>
-            <p class="descr kor">의 반려동물이 매년 버려집니다.</p>
+            <p class="kor font2">의 반려동물이 매년 버려집니다.</p>
           </div>
         </div>
 
@@ -95,19 +105,25 @@
           <img src="./assets/hwasung/hwasung_4.jpeg" alt="" />
         </div>
         <div class="hs-video">
-          <video src="./assets/hwasung/hwasung_5.mp4" controls autoplay="true" loop="true"></video>
+          <video
+            src="./assets/hwasung/hwasung_5.mp4"
+            controls
+            autoplay="true"
+            loop="true"
+            muted
+          ></video>
           <img src="./assets/hwasung/hwasung_back.svg" alt="" />
         </div>
       </div>
 
       <!-- 부모견 이야기 -->
-      <div style="margin-bottom: 40px" id="mommies">
+      <div id="mommies">
         <div class="middle mommy m-start">
           <div class="bottom-line"></div>
           <p class="eng-500 mom-title">THE MOTHERS</p>
-          <p class="kor mom-content">새끼를 생산하는 기계로 살아온 번식장 모견들이</p>
-          <p class="kor mom-content">이제는 새로운 이름으로 새로운 삶을 시작합니다.</p>
-          <p class="kor mom-content">위대한 위액트의 엄마들을 소개합니다!</p>
+          <p class="kor font3">새끼를 생산하는 기계로 살아온 번식장 모견들이</p>
+          <p class="kor font3">이제는 새로운 이름으로 새로운 삶을 시작합니다.</p>
+          <p class="kor font3">위대한 위액트의 엄마들을 소개합니다!</p>
         </div>
 
         <div class="m-photo"><img src="./assets/images/mommies/wink.svg" alt="" /></div>
@@ -123,10 +139,10 @@
 
         <div class="end">
           <div class="middle mommy">
-            <p class="kor mom-content">새끼를 생산하는 기계로 살아온 부모견에게,</p>
-            <p class="kor mom-content">태어나자마자 돈벌이 수단이 되는 자견들에게,</p>
-            <p class="kor mom-content">이제는 함께 약속해요.</p>
-            <p class="kor mom-content">멍! 가족은 사는게 아니야.</p>
+            <p class="kor mom-content font3">새끼를 생산하는 기계로 살아온 부모견에게,</p>
+            <p class="kor mom-content font3">태어나자마자 돈벌이 수단이 되는 자견들에게,</p>
+            <p class="kor mom-content font3">이제는 함께 약속해요.</p>
+            <p class="kor mom-content font3">멍! 가족은 사는게 아니야.</p>
 
             <!-- Footer -->
             <div class="footer">
@@ -139,9 +155,15 @@
                   <p class="kor">곽혜진 홍다빈 어쩌고 저쩌고 라랄라</p>
                 </div>
                 <div id="sns-links">
-                  <img src="./assets/images/ist.svg" alt="insta" />
-                  <img src="./assets/images/yt.svg" alt="youtube" />
-                  <img id="facebook" src="./assets/images/fb.svg" alt="facebook" />
+                  <a href="https://www.instagram.com/we.a.c.t/"
+                    ><img src="./assets/images/ist.svg" alt="insta"
+                  /></a>
+                  <a href="https://www.youtube.com/channel/UC-ddlziWuPQqqBlxpqyY1Yw"
+                    ><img src="./assets/images/yt.svg" alt="youtube"
+                  /></a>
+                  <a href="https://www.facebook.com/weactkorea/"
+                    ><img id="facebook" src="./assets/images/fb.svg" alt="facebook"
+                  /></a>
                 </div>
                 <img class="ci-logo" src="./assets/images/CI_logo.svg" alt="" />
                 <p class="copyright eng">ⓒ2023 WEACT ALL RIGHTS RESERVED.</p>

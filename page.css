@@ -19,6 +19,10 @@ img {
   -webkit-user-drag: none;
 }
 
+p {
+  margin-block: 0;
+}
+
 /** 글씨체 **/
 /* ENG */
 @font-face {
@@ -91,6 +95,20 @@ img {
 }
 
 /** 페이지 컨텐츠 **/
+.youtube-container {
+  display: flex;
+}
+
+#youtube {
+  min-width: 992px;
+  min-height: 650px;
+}
+@media (max-width: 992px) {
+  #youtube {
+    min-height: 500px;
+  }
+}
+
 #container {
   max-width: 1920px; /* Web 기준 */
   min-width: 992px;
@@ -109,22 +127,10 @@ img {
   border-bottom: 2px solid #ffffff;
 }
 
-#campaign-main p {
-  margin-block: 0;
-  line-height: 101px;
-  font-size: 80px;
-}
-
-.key-content p {
-  margin-block: 0;
-  line-height: 73.84px;
-  font-size: 52px;
-}
-
 /** byebye **/
 #bye {
   display: flex;
-  margin-block: 100px;
+  /* margin-block: 100px; */
 }
 #bye img {
   display: inherit;
@@ -132,6 +138,11 @@ img {
   column-gap: 0;
   max-height: 900px;
   overflow: hidden;
+}
+@media (max-width: 992px) {
+  #bye img {
+    height: 40vh;
+  }
 }
 
 /* byebye - 슬라이드 */
@@ -201,6 +212,12 @@ img {
   font-size: 200px;
   line-height: 252.67px;
 }
+@media (max-width: 992px) {
+  .number {
+    font-size: 130px;
+    line-height: 180px;
+  }
+}
 
 .descr {
   font-size: 45px;
@@ -217,13 +234,24 @@ img {
   line-height: 102.7px;
   text-align: center;
 }
+@media (max-width: 992px) {
+  .hs-title {
+    padding-top: 200px;
+  }
+  .hs-title p {
+    margin-block: 0;
+    font-size: 42px;
+    line-height: 72.7px;
+    text-align: center;
+  }
+}
 
 #hwasung {
   padding-top: 500px;
   background: linear-gradient(180deg, #000000 100%, rgba(0, 0, 0, 0) 33.73%);
 }
 #hwasung div img {
-  width: 100%;
+  /* width: 100%; */
 }
 .hs-img-1 {
   display: flex;
@@ -231,6 +259,7 @@ img {
   margin-bottom: -15px;
 }
 .hs-img-1 img:first-child {
+  width: 100%;
   max-width: 1920px;
   position: absolute;
 }
@@ -245,6 +274,11 @@ img {
 .hs-img-4 {
   margin-top: -5px;
 }
+.hs-img-2 > img,
+.hs-img-3 > img,
+.hs-img-4 > img {
+  width: 100%;
+}
 
 .hs-video {
   max-width: 1920px;
@@ -255,10 +289,34 @@ img {
   position: absolute;
   width: 100%;
   max-width: 1920px;
+  min-width: 992px;
 }
 .hs-video img {
   transform: scaleY(-1);
   margin-top: -230px;
+}
+
+@media (max-width: 992px) {
+  #hwasung {
+    padding-top: 300px;
+    background: linear-gradient(180deg, #000000 100%, rgba(0, 0, 0, 0) 33.73%);
+    margin-top: -3px;
+  }
+
+  .hs-video img {
+    transform: scaleY(-1);
+    margin-top: -200px;
+  }
+
+  .hs-img-1 img:first-child {
+    width: 992px;
+    position: absolute;
+  }
+  .hs-img-1 img:nth-child(2) {
+    float: left;
+    position: relative;
+    margin-top: -3px;
+  }
 }
 
 /** 부모견 이야기 **/
@@ -279,6 +337,14 @@ img {
 .mom-title {
   line-height: 173.24px;
   font-size: 122px;
+}
+@media (max-width: 992px) {
+  .mom-title {
+    line-height: 103.24px;
+    font-size: 80px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
 }
 
 .mom-content {
@@ -342,4 +408,130 @@ img {
   line-height: 43px;
   letter-spacing: 0em;
   text-align: center;
+}
+
+/** 카페24 **/
+/* font */
+.font10 {
+  font-size: 1em;
+  line-height: 1.4;
+}
+.font6 {
+  font-size: 0.8em;
+  line-height: 1.9;
+}
+.font5 {
+  font-size: 1.4em;
+  line-height: 1.1;
+}
+.font4 {
+  font-size: 2em;
+  line-height: 1.1;
+}
+.font3 {
+  font-size: 3em;
+  line-height: 1.2;
+}
+.font2 {
+  font-size: 3.8em;
+  line-height: 1.2;
+}
+.font1 {
+  font-size: 4.6em;
+  line-height: 1.1;
+}
+.font0 {
+  font-size: 7em;
+  font-weight: 800;
+  line-height: 1;
+}
+.small {
+  font-size: 16px;
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media all and (min-width: 769px) {
+  .container-fluid .row > div {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .font1 {
+    font-size: 2.8em;
+  }
+  .font2 {
+    font-size: 2.4em;
+  }
+  .font3 {
+    font-size: 1.7em;
+    line-height: 1.2;
+  }
+  .font4 {
+    font-size: 1.4em;
+  }
+  .font5 {
+    font-size: 1.2em;
+  }
+
+  footer .fText-right,
+  footer .fText-center {
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  #contents {
+    padding-top: 40px;
+  }
+  #aside .container {
+    padding-top: 50px;
+  }
+  #titleArea h2 {
+    margin-bottom: 20px;
+  }
+  .font1 {
+    font-size: 2.4em;
+  }
+  .brderR {
+    border-radius: 20px;
+  }
+  header .logo {
+    height: 46px;
+    width: 70px;
+    top: 35px;
+    left: 10px;
+  }
+  header .logo_color {
+    height: 46px;
+    width: 70px;
+    top: 25px;
+    left: 25px;
+  }
+  header.inverted .logo {
+    left: 35px;
+  }
+  header.inverted .logo_color {
+    left: 0px;
+  }
+  header .headerMenu {
+    height: 40px;
+    right: 0px;
+  }
+  .gnbMenu a {
+    font-size: 2.4em;
+  }
+  .gnbOpen .logo {
+    left: 35px;
+  }
+  .gnbOpen .closebtn {
+    top: 15px;
+    right: 20px;
+  }
 }
