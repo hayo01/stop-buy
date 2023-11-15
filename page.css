@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 }
-@media (min-width: 1920px) {
+@media (min-width: 1280px) {
   body {
     display: flex;
     flex-direction: column;
@@ -25,15 +25,15 @@ p {
 /* ENG */
 @font-face {
   font-family: CircularStd; /* 400 */
-  src: url("/base/img/campaign/fonts/eng/CircularStd-Book.otf") format("opentype");
+  src: url("./assets/fonts/eng/CircularStd-Book.otf") format("opentype");
 }
 @font-face {
   font-family: CircularStd-Medium; /* 500 */
-  src: url("/base/img/campaign/fonts/eng/CircularStd-Medium.otf") format("opentype");
+  src: url("./assets/fonts/eng/CircularStd-Medium.otf") format("opentype");
 }
 @font-face {
   font-family: CircularStd-Bold;
-  src: url("/base/img/campaign/fonts/eng/CircularStd-Bold.otf") format("opentype");
+  src: url("./assets/fonts/eng/CircularStd-Bold.otf") format("opentype");
 }
 
 .eng {
@@ -52,23 +52,23 @@ p {
 /* KOR */
 @font-face {
   font-family: Pretendard-Light; /* 300 */
-  src: url("/base/img/campaign/fonts/kor/Pretendard-Light.otf") format("opentype");
+  src: url("./assets/fonts/kor/Pretendard-Light.otf") format("opentype");
 }
 @font-face {
   font-family: Pretendard; /* 400 */
-  src: url("/base/img/campaign/fonts/kor/Pretendard-Regular.otf") format("opentype");
+  src: url("./assets/fonts/kor/Pretendard-Regular.otf") format("opentype");
 }
 @font-face {
   font-family: Pretendard-Medium; /* 500 */
-  src: url("/base/img/campaign/fonts/kor/Pretendard-Medium.otf") format("opentype");
+  src: url("./assets/fonts/kor/Pretendard-Medium.otf") format("opentype");
 }
 @font-face {
   font-family: Pretendard-Bold; /* 700 */
-  src: url("/base/img/campaign/fonts/kor/Pretendard-Bold.otf") format("opentype");
+  src: url("./assets/fonts/kor/Pretendard-Bold.otf") format("opentype");
 }
 @font-face {
   font-family: Pretendard-ExtraBold; /* 800 */
-  src: url("/base/img/campaign/fonts/kor/Pretendard-ExtraBold.otf") format("opentype");
+  src: url("./assets/fonts/kor/Pretendard-ExtraBold.otf") format("opentype");
 }
 
 .kor-300 {
@@ -98,7 +98,6 @@ p {
 }
 
 #youtube {
-  min-width: 992px;
   min-height: 650px;
 }
 @media (max-width: 992px) {
@@ -108,8 +107,8 @@ p {
 }
 
 #container {
-  max-width: 1920px; /* Web 기준 */
-  min-width: 992px;
+  max-width: 1280px; /* Web 기준 */
+  min-width: 850px;
 }
 
 #main {
@@ -128,6 +127,7 @@ p {
 /** byebye **/
 #bye {
   display: flex;
+  height: 25em;
 }
 #bye img {
   display: inherit;
@@ -137,8 +137,8 @@ p {
   overflow: hidden;
 }
 @media (max-width: 992px) {
-  #bye img {
-    height: 40vh;
+  #bye {
+    height: 35em;
   }
 }
 
@@ -239,7 +239,7 @@ p {
 }
 .hs-img-1 img:first-child {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1280px;
   position: absolute;
 }
 .hs-img-1 img:nth-child(2) {
@@ -260,20 +260,13 @@ p {
 }
 
 .hs-video {
-  max-width: 1920px;
-  min-height: 550px;
+  max-width: 1280px;
   margin-top: -5px;
 }
 .hs-video video {
-  position: absolute;
   width: 100%;
-  max-width: 1920px;
-  min-width: 992px;
-}
-.hs-video img {
-  transform: scaleY(-1);
-  margin-top: -230px;
-  width: 100%;
+  max-width: 1280px;
+  min-width: 850px;
 }
 
 @media (max-width: 992px) {
@@ -283,13 +276,8 @@ p {
     margin-top: -3px;
   }
 
-  .hs-video img {
-    transform: scaleY(-1);
-    margin-top: -178px;
-  }
-
   .hs-img-1 img:first-child {
-    width: 992px;
+    min-width: 850px;
     position: absolute;
   }
   .hs-img-1 img:nth-child(2) {
@@ -301,8 +289,8 @@ p {
 
 /** 부모견 이야기 **/
 .m-start {
-  background: linear-gradient(180deg, #000000 0.12%, #f6d33a 65.91%);
-  padding-top: 200px;
+  background: #ffd340;
+  padding-top: 100px;
   padding-bottom: 150px;
 }
 
